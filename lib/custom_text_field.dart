@@ -96,17 +96,17 @@ class _CustomTextFieldState extends State<CustomTextField> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(borrderRadius),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
                 color: Colors.green, width: 1.0), // Focused border color
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(borrderRadius),
             borderSide:
-                BorderSide(color: Colors.red, width: 1.0), // Error border color
+                const BorderSide(color: Colors.red, width: 1.0), // Error border color
           ),
           focusedErrorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(borrderRadius),
-            borderSide: BorderSide(
+            borderSide: const BorderSide(
                 color: Colors.redAccent, width: 1.0), // Focused error border
           ),
           contentPadding:

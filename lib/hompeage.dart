@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:custom_textfield/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +15,7 @@ class _HompeageState extends State<Hompeage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Custom TextField'),
+        title: const Text('Custom TextField'),
       ),
       // backgroundColor: Colors.green,
       body: SafeArea(
@@ -42,11 +40,11 @@ class _HompeageState extends State<Hompeage> {
                     if (formKey.currentState!.validate()) {
                       // If the form is valid, show a snackbar or perform any action
                       ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(content: Text('Form is valid!')),
+                        const SnackBar(content: Text('Form is valid!')),
                       );
                     }
                   },
-                  child: Text('Submit'),
+                  child: const Text('Submit'),
                 ),
               ],
             ),
